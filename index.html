@@ -8,43 +8,45 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
-                <a href="info@youremail.com"><img src="img/icons/mail-icon.png" alt="icon emeil"><span>info@youremail.com</span></a>  
-                <a href="+4805550103"><img src="img/icons/phone-icon.png" alt="icon namber"><span>+4805550103</span></a>
+    <header class="header">
+        <div class="header__info">
+            <div class="header__contacts">
+                <a href="info@youremail.com" class="header__contacts__email"><img src="img/icons/mail-icon.png" alt="icon emeil"><span>info@youremail.com</span></a>  
+                <a href="+4805550103" class="header__contacts__phone"><img src="img/icons/phone-icon.png" alt="icon namber"><span>+4805550103</span></a>
             </div>
-            <div>
-                <a href="#"><img src="img/icons/facebook-icon.png" alt="icon facebook" /></a>
-                <a href="#"><img src="img/icons/instagram-icon.png" alt="icon instagram" /></a>
-                <a href="#"><img src="img/icons/twitter-icon.png" alt="icon twiter" /></a>
-                <a href="#"><img src="img/icons/youtube-icon.png" alt="icon youtube" /></a>
+            <div class="header__social">
+                <a href="#" class="header__social-facebook"><img src="img/icons/facebook-icon.png" alt="icon facebook" /></a>
+                <a href="#" class="header__social-instagram"><img src="img/icons/instagram-icon.png" alt="icon instagram" /></a>
+                <a href="#" class="header__social-twitter"><img src="img/icons/twitter-icon.png" alt="icon twitter" /></a>
+                <a href="#" class="header__social-youtube"><img src="img/icons/youtube-icon.png" alt="icon youtube" /></a>
             </div>
         </div>
-        <div>
-            <nav>
+        <div class="header__menu">
+            <nav class="header__nav header__nav--left">
                 <a href="#" target="blank">Hone</a>
                 <a href="#" target="blank">About</a>
                 <a href="#" target="blank">Features</a>
+            </nav>
+            <div class="header__logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <nav class="header__nav header__nav--right">
                 <a href="#" target="blank">Screenshot</a>
                 <a href="#" target="blank">Blog</a>
                 <button type="button">Download</button> 
             </nav>
-            <div>
-                <img src="img/logo.png" alt="logo">
-            </div>
         </div> 
-        <div>
-            <div>
-                <h1>A Great App Makes<br>Your Life Better</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div>
-                    <p>Download App Now</p>
-                    <a href="#"><img src="img/icons/google.play-icon.png" alt="google play icon"></a>
-                    <a href="#"><img src="img/icons/app.store-icon.png" alt="app store icon"></a>
+        <div class="header__intro">
+            <div class="header__text first-caption">
+                <h1 class="first-caption__title">A Great App Makes<br>Your Life Better</h1>
+                <p class="first-caption__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="first-caption__download">
+                    <p class="first-caption__download-text">Download App Now</p>
+                    <a class="first-caption__download-button" href="#"><img src="img/icons/google.play-icon.png" alt="google play icon"></a>
+                    <a class="first-caption__download-button" href="#"><img src="img/icons/app.store-icon.png" alt="app store icon"></a>
                 </div>
             </div>
-            <img src="img/pictures/mobaile.app.picture.png" alt="mobail add picrure">
+            <img class="header__picture" src="img/pictures/mobaile.app.picture.png" alt="mobail add picrure">
         </div> 
     </header>
     <main>
