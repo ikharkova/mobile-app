@@ -8,5 +8,23 @@ html, body {
 }
 
 body {
-    background-color: cadetblue;
+    
+}
+.container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../img/background-header.png);
+    display: flex;
+    flex-direction: column;
+
+}
+.header__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
 }
