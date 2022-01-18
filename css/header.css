@@ -1,0 +1,105 @@
+/* Mobile */
+.header {
+    background-image: url(../img/background-header.png);
+    padding-top: 40px;
+}
+.header__info,
+.header__nav,
+.header__burger-checkbox {
+    display: none;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 40px;
+    padding: 3px 3px 3px 9px;
+    margin-bottom: 108px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.header__logo {
+    position: absolute;
+    right: calc(50% - 50px);
+    top: calc(50% - 30px);
+    display: flex;
+    width: 100px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.header__logo > img {
+    max-width: 100%;
+}
+.header__button {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 3px;
+    border: 0;
+
+}
+.header__burger-icon {
+    display: flex;
+    align-items: center;
+    width: 24px;
+}
+.header__burger-icon img {
+    max-width: 100%;
+}
+.first-caption {
+    position: relative;
+    padding: 30px 12px 20px 18px;
+    margin-right: 20px;
+    background-color: var(--secondary-color);
+}
+.first-caption__title {
+    margin-bottom: 18px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+}
+.first-caption__text {
+    margin-bottom: 22px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.first-caption__download-button {
+    width: 108px;
+    display: inline-block;
+}
+.first-caption__download-button img {
+    max-width: 100%;
+}
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1200px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
