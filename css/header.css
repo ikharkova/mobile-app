@@ -2,6 +2,7 @@
 .header {
     background-image: url(../img/background-header.png);
     padding-top: 40px;
+    padding-bottom: 124px;
 }
 .header__info,
 .header__nav,
@@ -59,9 +60,22 @@
 }
 .first-caption {
     position: relative;
+    margin-right: 20px; 
+    margin-bottom: 60px;  
+}
+.first-caption::before {
+    content:"";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    left: 20px;
+    border: 10px solid #7572FF;
+}
+.first-caption__inner {
+    position: relative;
     padding: 30px 12px 20px 18px;
-    margin-right: 20px;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color); 
 }
 .first-caption__title {
     margin-bottom: 18px;
@@ -84,9 +98,96 @@
 .first-caption__download-button img {
     max-width: 100%;
 }
+.first-caption__download-text{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+.header__picture{
+    height: 520px;
+    display: flex;
+    justify-content: center;
+}
+.header__picture img {
+    max-width: 100%;
+}
+
 /* Tablet */
 
 @media screen and (min-width: 768px) {
+    .header {
+        padding:25px 40px  220px 40px;
+    }
+    .header__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    .header__contacts {
+        display: flex;
+        align-items: center;
+    }
+    .header__contacts a {
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+    .header__contacts__email,
+    .header__contacts__phone{
+        display: flex;
+        align-items: center;
+        margin-right: 48px;
+
+    }
+    .header__contacts__email > img {
+        margin-right: 18px;
+    }
+    .header__contacts__phone > img {
+        margin-right: 18px;
+    }
+    .header__social {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .header__social a {
+        margin-left: 30px;
+    }
+    .header__menu {
+        height: 60px;
+        padding: 5px 5px 5px 18px;
+        margin-bottom: 235px;
+    }
+    .header__logo {
+        right: calc(50% - 100px);
+        top: calc(50% - 45px);
+        width: 200px;
+        height: 90px;
+        padding: 16px;
+    }    
+    .header__button {
+        font-size: 20px;
+        padding: 0 16px;
+    }
+    .header__intro {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+    }
+    .header__picture {
+        height: 420px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+    .first-caption {
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-right: 75px;
+        margin-bottom: 20px;
+    }
 
 }
 
