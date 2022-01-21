@@ -228,7 +228,7 @@
 
 /* Laptop */
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1152px) {
     .header {
         padding:45px 20px  74px ;
     }
