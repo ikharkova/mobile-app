@@ -58,10 +58,31 @@
 .header__burger-icon img {
     max-width: 100%;
 }
+.header__intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header__picture{
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+.header__picture img {
+    max-width: 100%;
+}
 .first-caption {
     position: relative;
     margin-right: 20px; 
     margin-bottom: 60px;  
+    min-width: 323px;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .first-caption::before {
     content:"";
@@ -70,7 +91,9 @@
     top: -20px;
     bottom: -20px;
     left: 20px;
-    border: 10px solid #7572FF;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #7572FF;
 }
 .first-caption__inner {
     position: relative;
@@ -80,6 +103,7 @@
 .first-caption__title {
     margin-bottom: 18px;
     color: var(--primary-color);
+    text-transform: uppercase;
     font-weight: 600;
     font-size: 25px;
     line-height: 37px;
@@ -92,25 +116,19 @@
     line-height: 24px;
 }
 .first-caption__download-button {
-    width: 108px;
-    display: inline-block;
+    margin-right: 10px;
 }
 .first-caption__download-button img {
-    max-width: 100%;
+    width: 108px;
+    height: 34px;
+    
 }
 .first-caption__download-text{
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
     color: var(--title-color);
-}
-.header__picture{
-    height: 520px;
-    display: flex;
-    justify-content: center;
-}
-.header__picture img {
-    max-width: 100%;
+    margin-bottom: 19px;
 }
 
 /* Tablet */
@@ -172,8 +190,7 @@
         padding: 0 16px;
     }
     .header__intro {
-        display: flex;
-        flex-flow: row nowrap;
+        flex-wrap: nowrap;
         align-items: flex-end;
     }
     .header__picture {
@@ -185,22 +202,104 @@
     .first-caption {
         flex-grow: 1;
         flex-shrink: 1;
+        flex-basis: auto;
         margin-right: 75px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        min-width: 356px;
     }
-
+    .first-caption::before {
+        right: -35px;
+        top: -35px;
+        bottom: -35px;
+        left: 35px;
+        border-width: 18px;
+    }
+    .first-caption__download-text {
+        margin-bottom: 23px;
+    }
+    .first-caption__download-button {
+        margin-right: 14px;
+    }
+    .first-caption__download-button img {
+        width: 135px;
+        height: 47px;
+    }
 }
 
 /* Laptop */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
     .header {
-        flex-direction: column;
+        padding:45px 20px  74px ;
     }
     .header__info {
+        margin-bottom: 25px;
+    }
+    .header__menu {
+        justify-content: flex-end;
+        padding-left: 52px;
+        margin-bottom: 58px;
+    }
+    .header__nav--left {
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        margin-right: auto;
+    }
+    .header__nav--right {
+        display: flex;
+        align-items: center;
+       
+    }
+    .header__nav-item {
+        --item-height: 20px;
+        margin-right: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: var(--item-height);
+        line-height: 1;
+        color: var(--title-color);
+        display: block;
+        margin-top: calc(var(--item-height) * 0.25); /* to compensate font */
+    }
+    .header__burger-icon {
+        display: none;
+    }
+    .header__intro{
         justify-content: space-between;
-        margin-top: 40px;
+        align-items: center;
+    }
+    .header__picture{
+        height: 725px;
+    }
+    .first-caption {
+        max-width: 570px;
+        margin-bottom: 0;
+        margin-right: 50px;
+    }
+    .first-caption__inner {
+        padding: 40px 23px 40px 30px;
+        
+    }
+    .first-caption__title {
+        font-weight: 700;
+        font-size: 48.83px;
+        line-height: 63px;
+    }
+    .first-caption::before {
+        right: -50px;
+        top: -50px;
+        bottom: -50px;
+        left: 50px;
+    }
+    .first-caption__text {
+        margin-bottom: 52px;
+    }
+    .first-caption__download-text {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .first-caption__download-button {
+        width: 149px;
     }
 }

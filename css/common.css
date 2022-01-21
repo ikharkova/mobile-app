@@ -12,6 +12,13 @@ html, body {
     padding: 0;
     margin: 0;
 }
+p {
+    margin: 0;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
 .container {
     width: 1200px;
     max-width: 100%;
