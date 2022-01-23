@@ -1,6 +1,7 @@
 /* Mobile */
 .header {
-    background-image: url(../img/background-header.png);
+    background-image: url(../img/background.png);
+    background-position: center top ;
     padding-top: 40px;
     padding-bottom: 124px;
 }
@@ -79,7 +80,6 @@
     position: relative;
     margin-right: 20px; 
     margin-bottom: 60px;  
-    min-width: 323px;
     flex-basis: auto;
     flex-grow: 1;
     flex-shrink: 1;
@@ -132,7 +132,6 @@
 }
 
 /* Tablet */
-
 @media screen and (min-width: 768px) {
     .header {
         padding:25px 40px  220px 40px;
@@ -230,6 +229,8 @@
 
 @media screen and (min-width: 1152px) {
     .header {
+        background-repeat: no-repeat;
+        background-size: cover;
         padding:45px 20px  74px ;
     }
     .header__info {
