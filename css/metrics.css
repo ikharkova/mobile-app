@@ -1,0 +1,137 @@
+.metrics {
+    display: flex;
+    flex-direction: column;
+    padding: 60px  0 ;
+   
+}
+.metrics__header-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-bottom: 18px;
+}
+.metrics__header-text {
+    width: 330px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+.metrics__download {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+.metrics__download-button {
+    display: block;
+    width: 149px;
+    height: 47px;
+}
+.metrics__download-button > img {
+    width: 100%
+}
+.metrics__information-block {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.metrics__block-item {
+    width: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 3px 12px;
+    background-color: var( --primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+.metrics__block-item > img {
+    width: 18px;
+}
+.metrics__block-item-number {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.metrics__block-item-text {
+    font-size: 16px;
+}
+.metrics__picture {
+    max-width: 335px;
+}
+.metrics__picture > img {
+    width: 100%;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .metrics__header-title {
+        font-weight: 700;
+        font-size: 31.25px;
+    }
+    .metrics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 24px;
+        align-items: end;
+        margin-bottom: 120px;
+    }
+    .metrics__information-block {
+        margin-bottom: 0;
+    }
+    .metrics__download {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Laptop */
+
+@media screen and (min-width: 1152px) {
+    .metrics {
+        margin-bottom: 162px;
+    }
+    .metrics__header-text {
+        width: 570px;
+    }
+    .metrics__download {
+        margin-bottom: 60px;
+    }
+    .metrics__block-item {
+        width: 170px;
+        gap: 18px;
+        padding: 30px 10px 20px;
+        border-radius: 10px;
+    }
+    .metrics__picture {
+        max-width: 516px;
+    }
+    .metrics {
+        column-gap: 80px;
+    }
+    .metrics__information-block {
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
+    .metrics__block-item > img {
+        width: 35px;
+    }
+    .metrics__block-item-number {
+        font-size: 25px;
+    }
+    .metrics__block-item-text {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+}
