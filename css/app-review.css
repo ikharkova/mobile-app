@@ -3,6 +3,7 @@
     background-position: center top ;
     background-repeat: no-repeat;
     margin-bottom: 60px;
+    padding-top: 60px;
 }
 .app-review__header {
     display: flex;
@@ -39,9 +40,58 @@
 }
 .app-review__video {
     position: relative;
+    text-align: center;
+    line-height: 0;
+    border-radius: 10px;
+    margin: 0 15px;
+}
+.app-review__video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(88, 81, 234, 0.4);
+    border-radius: 10px;
 }
 .app-review__video > img {
-   max-width: 100%;
+   width: 100%;
    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.24);
-   border-radius: 10px;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .app-review {
+        margin-bottom: 120px;
+        padding-top: 50px;
+    }
+    .app-review__video {
+        margin: 0 70px;
+    }
+    .app-review__header-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 47px;
+    }
+    .app-review__header-text {
+        width: 600px;
+        margin: 0 auto 60px;
+    }
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1152px) {
+    .app-review {
+        margin-bottom: 120px;
+        padding-top: 50px;
+    }
+    .app-review__video {
+        margin: 0 100px;
+    }
+    .app-review__header-text {
+        width: 770px;
+    }
 }
