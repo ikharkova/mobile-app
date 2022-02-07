@@ -1,0 +1,149 @@
+.team__header-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 18px;
+}
+.team__header-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.team__main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.team__main-developer-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 15px 50px;
+}
+.team__main-developer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__main-developer-photo {
+    margin-bottom: 65px;
+}
+.team__main-developer-photo > img {
+    max-width: 100%;
+}
+
+.team__main-developer-name {
+    font-weight: 700;
+    font-size: 31.25px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.team__main-developer-qualification {
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 14px;
+}
+.team__main-developer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.team__main-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;  
+}
+.team__main-social-icon {
+    width: 24px;
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .team__header-title {
+        font-weight: 700;
+        font-size: 31.25px;
+    }
+    .team__header-text {
+        padding: 0 120px;
+        margin-bottom: 32px;
+    }
+    .team__main {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .team__main-developer-information {
+        padding: 30px 15px;
+    }
+    .team__main-developer-photo {
+        margin-bottom:  11px;
+    }
+    .team__main-developer-name {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 9px;
+    }
+    .team__main-developer-qualification {
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .team__main-developer-text {
+        margin-bottom: 40px;
+    }
+
+        
+
+}
+
+@media screen and (min-width: 1152px) {
+    .team__header-title  {
+        margin-bottom: 23px;
+    }
+
+    .team__main-developer-information {
+        max-width: 370px;
+    }
+    .team__header-text {
+        padding: 0 280px;
+        margin-bottom: 60px;
+    }
+    .team__main-developer-information {
+        padding: 40px 22px 53px;
+    }
+    .team__main {
+        gap: 30px;
+    }
+    .team__main-developer-photo {
+        margin-bottom:  66px;
+    }
+    .team__main-developer-name {
+        font-weight: 700;
+        font-size: 31.25px;
+    }
+    .team__main-developer-qualification {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+}
