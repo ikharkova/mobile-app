@@ -266,42 +266,61 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Our Happy Customers</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+        <section class="customers">
+            <div class="customers__header">
+                <h2 class="customers__title">Our Happy Customers</h2>
+                <p class="customers__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <img src="img/pictures/photo-co-developer.png" alt="photo CO developer">
+            <div id="animated_carousel" class="customers__carousel">
+                <div class="customers__carousel-holder">
+                    <div class="customers__carousel-item">
+                        <div class="customers__review-photo">
+                            <img src="img/pictures/photo-co-developer.png" alt="photo CO developer">
+                        </div>
+                        <h4 class="customers__review-name">
+                            Ann Lubin 1
+                        </h4>
+                        <p class="customers__review-job-description">
+                            Co-Founder
+                        </p>
+                        <p class="customers__review-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+                        </p>
                     </div>
-                    <div>
-                        <span>Ann Lubin</span>
-                        <span>Co-Founder</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</span>
+                    <div class="customers__carousel-item">
+                        <div class="customers__review-photo">
+                            <img src="img/pictures/photo-co-developer.png" alt="photo CO developer">
+                        </div>
+                        <h4 class="customers__review-name">
+                            Ann Lubin 2
+                        </h4>
+                        <p class="customers__review-job-description">
+                            Co-Founder
+                        </p>
+                        <p class="customers__review-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+                        </p>
+                    </div>
+                    <div class="customers__carousel-item">
+                        <div class="customers__review-photo">
+                            <img src="img/pictures/photo-co-developer.png" alt="photo CO developer">
+                        </div>
+                        <h4 class="customers__review-name">
+                            Ann Lubin 3
+                        </h4>
+                        <p class="customers__review-job-description">
+                            Co-Founder
+                        </p>
+                        <p class="customers__review-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img src="img/pictures/photo-co-developer.png" alt="photo CO developer">
-                    </div>
-                    <div>
-                        <span>Ann Lubin</span>
-                        <span>Co-Founder</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</span>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="img/pictures/photo-co-developer.png" alt="photo CO developer">
-                    </div>
-                    <div>
-                        <span>Ann Lubin</span>
-                        <span>Co-Founder</span>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</span>
-                    </div>
-                </div>
+                <ul class="customers__carousel-controls">
+                    <li class="customers__carousel-controls-button"></li>
+                    <li class="customers__carousel-controls-button"></li>
+                    <li class="customers__carousel-controls-button"></li>
+                </ul>
             </div>
         </section>
         <section>
@@ -381,5 +400,6 @@
         </div>
     </footer>
     <script src="js/carousel.js" ></script>
+    <script src="./js/animated_carousel.js"></script>
 </body>
 </html>
