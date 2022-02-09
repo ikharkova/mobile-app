@@ -256,10 +256,15 @@
     font-size: 25px;
     line-height: 37px;
   }
+  .footer__contacts-item {
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
   .footer__contacts-divider {
     width: 4px;
     height: 117px;
-    margin-left: 180px;
+    margin-left: 0;
+    flex-grow: 0;
   }
   .footer__main {
     column-gap: 66px;
