@@ -1,0 +1,123 @@
+.blog {
+  background-color: var(--secondary-color);
+  padding-top: 60px;
+  margin-bottom: 210px;
+}
+.blog__header-title {
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 25px;
+}
+.blog__header-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+.blog__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.blog__main-item {
+  max-width: 350px;
+  background: var(--secondary-color);
+  box-shadow: 0px 1px 10px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+}
+.blog__main-item-img {
+  margin-bottom: 30px;
+}
+.blog__main-item-img > img {
+  width: 100%;
+}
+.blog__main-item-block {
+  padding: 0 13px 30px 18px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  flex-grow: 1; 
+}
+.blog__main-item-title {
+  height: 120px; /* different number of lines of text when expanding the screen */
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: var(--title-color);
+  margin-bottom: 18px;
+}
+.blog__main-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.blog__main-item-link {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .blog {
+    padding-top: 120px;
+    margin-bottom: 190px;
+  }
+  .blog__header-title {
+    font-weight: 700;
+    font-size: 31.25px;
+  }
+  .blog__main {
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .blog__main-item-text {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1152px) {
+  .blog {
+    margin-bottom: 250px;
+  }
+  .blog__header-text {
+    margin-bottom: 60px;
+  }
+  .blog__main {
+    gap: 30px;
+  }
+  .blog__main-item-img {
+    margin-bottom: 40px;
+  }
+  .blog__main-item-text {
+    margin-bottom: 28px;
+  }
+  .blog__main-item-title {
+    margin-bottom: 10px;
+  }
+  .blog__main-item {
+    max-width: 370px;
+  }
+  .blog__main-item-title {
+    height: 60px;
+  }
+}
