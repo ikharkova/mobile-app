@@ -7,10 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body id="body">
     <header class="header">
         <div class="container">
-            <div class="header__info">
+            <div class="header__info" id="home">
                 <div class="header__contacts">
                     <a href="info@youremail.com" class="header__contacts__email">
                         <img src="img/icons/mail-icon.png" alt="icon emeil">
@@ -29,19 +29,29 @@
                 </div>
             </div>
             <div class="header__menu">
-                <label class="header__burger-icon" for="burger-checkbox"><img src="img/icons/burger-icon.png" alt="burger icon"></label>
-                <input type="checkbox" id="burger-checkbox" class="header__burger-checkbox">
+                <div class="header__burger-icon" id="burger-menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="header__burger-menu" id="burger-menu">
+                    <a class="header__burger-item" href="#home" target="blank">Home</a>
+                    <a class="header__burger-item" href="#about" target="blank">About</a>
+                    <a class="header__burger-item" href="#features" target="blank">Features</a>
+                    <a class="header__burger-item" href="#screenshot" target="blank">Screenshot</a>
+                    <a class="header__burger-item" href="#blog" target="blank">Blog</a>
+                </nav>
                 <nav class="header__nav header__nav--left">
-                    <a class="header__nav-item" href="#" target="blank">Home</a>
-                    <a class="header__nav-item" href="#" target="blank">About</a>
-                    <a class="header__nav-item" href="#" target="blank">Features</a>
+                    <a class="header__nav-item" href="#home" target="blank">Home</a>
+                    <a class="header__nav-item" href="#about" target="blank">About</a>
+                    <a class="header__nav-item" href="#features" target="blank">Features</a>
                 </nav>
                 <div class="header__logo">
                     <img src="img/logo.png" alt="logo">
                 </div>
                 <nav class="header__nav header__nav--right">
-                    <a class="header__nav-item" href="#" target="blank">Screenshot</a>
-                    <a class="header__nav-item" href="#" target="blank">Blog</a>
+                    <a class="header__nav-item" href="#screenshot" target="blank">Screenshot</a>
+                    <a class="header__nav-item" href="#blog" target="blank">Blog</a>
                 </nav>
                 <button class="header__button" type="button">Download</button> 
             </div> 
@@ -64,7 +74,7 @@
         </div>
     </header>
     <main>
-         <section class="about-app">
+         <section class="about-app" id="about">
             <div class="container">
                 <div class="about-app__header">
                     <h2 class="about-app__title">About Our App</h2>
@@ -100,7 +110,7 @@
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
             <div class="conteiner">
                 <div class="features__header">
                     <h2 class="features__header-title">App features</h2>
@@ -145,7 +155,7 @@
                 </div>
             </div>
         </section> 
-        <section class="carousel">
+        <section class="carousel" id="screenshot">
             <div class="container">
                 <div class="carousel__header">
                     <h2 class="carousel__header-title">Checkout Our <br class="line-break">App Interface Look</h2>
@@ -332,7 +342,7 @@
                 </ul>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <div class="container">
                 <div class="blog__header">
                     <h2 class="blog__header-title">Our recent blog</h2>
@@ -435,5 +445,6 @@
     </footer>
     <script src="js/carousel.js" ></script>
     <script src="./js/animated_carousel.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 </html>

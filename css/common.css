@@ -25,4 +25,6 @@ ul,li {
     padding: 0 16px;
     margin: 0 auto;
 }
-
+.no-scroll {
+    overflow: hidden;
+}
