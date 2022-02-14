@@ -85,6 +85,9 @@
   text-decoration: none;
   color: var(--secondary-color);
 }
+.footer__nav-link > a:hover {
+  color: var(--primary-color);
+}
 .footer__form-title {
   font-weight: 600;
   font-size: 25px;
