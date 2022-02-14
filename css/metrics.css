@@ -1,8 +1,8 @@
 .metrics {
     display: flex;
     flex-direction: column;
-    padding: 60px  0 ;
-   
+    padding: 60px 0;
+    align-items: center;
 }
 .metrics__header-title {
     font-weight: 600;
